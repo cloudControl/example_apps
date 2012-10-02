@@ -1,0 +1,13 @@
+source 'http://rubygems.org'
+
+gem "rails", "2.3.14"
+gem "json"
+
+group :development, :test do
+  gem "sqlite3"
+end
+
+group :production do
+  gem 'mysql2'
+  gem 'activerecord-mysql2-adapter'
+end
