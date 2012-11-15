@@ -1,0 +1,6 @@
+*~
+.DS_Store
+*.swp
+
+# Zend2 example app's vendor dir
+/php/zend2/vendor*

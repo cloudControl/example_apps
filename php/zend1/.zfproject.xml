@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<projectProfile type="default" version="1.11.11">
+  <projectDirectory>
+    <projectProfileFile filesystemName=".zfproject.xml"/>
+    <applicationDirectory classNamePrefix="Application_">
+      <apisDirectory enabled="false"/>
+      <configsDirectory>
+        <applicationConfigFile type="ini"/>
+      </configsDirectory>
+      <controllersDirectory>
+        <controllerFile controllerName="Index">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Guestbook">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="sign"/>
+        </controllerFile>
+      </controllersDirectory>
+      <formsDirectory>
+        <formFile formName="Guestbook"/>
+      </formsDirectory>
+      <layoutsDirectory>
+        <layoutScriptsDirectory>
+          <layoutScriptFile layoutName="layout"/>
+        </layoutScriptsDirectory>
+      </layoutsDirectory>
+      <modelsDirectory>
+        <modelFile modelName="Article"/>
+        <dbTableDirectory>
+          <dbTableFile dbTableName="Guestbook"/>
+        </dbTableDirectory>
+        <modelFile modelName="GuestbookMapper"/>
+        <modelFile modelName="Guestbook"/>
+      </modelsDirectory>
+      <modulesDirectory>
+        <moduleDirectory moduleName="guestbook">
+          <apisDirectory enabled="false"/>
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Index">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="show"/>
+              <actionMethod actionName="create"/>
+              <actionMethod actionName="update"/>
+              <actionMethod actionName="delete"/>
+            </controllerFile>
+          </controllersDirectory>
+          <formsDirectory>
+            <formFile formName="ArticleCreate"/>
+            <formFile formName="ArticleUpdate"/>
+            <formFile formName="ArticleDelete"/>
+          </formsDirectory>
+          <layoutsDirectory enabled="false">
+            <layoutScriptsDirectory enabled="false"/>
+          </layoutsDirectory>
+          <modelsDirectory>
+            <modelFile modelName="Article"/>
+          </modelsDirectory>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="show"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="create"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="update"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="delete"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+            <viewHelpersDirectory/>
+            <viewFiltersDirectory/>
+          </viewsDirectory>
+        </moduleDirectory>
+      </modulesDirectory>
+      <viewsDirectory>
+        <viewScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Index">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Error">
+            <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Guestbook">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Guestbook">
+            <viewScriptFile forActionName="sign"/>
+          </viewControllerScriptsDirectory>
+        </viewScriptsDirectory>
+        <viewHelpersDirectory/>
+        <viewFiltersDirectory enabled="false"/>
+      </viewsDirectory>
+      <bootstrapFile filesystemName="Bootstrap.php"/>
+    </applicationDirectory>
+    <dataDirectory enabled="false">
+      <cacheDirectory enabled="false"/>
+      <searchIndexesDirectory enabled="false"/>
+      <localesDirectory enabled="false"/>
+      <logsDirectory enabled="false"/>
+      <sessionsDirectory enabled="false"/>
+      <uploadsDirectory enabled="false"/>
+    </dataDirectory>
+    <docsDirectory>
+      <file filesystemName="README.txt"/>
+    </docsDirectory>
+    <libraryDirectory>
+      <zfStandardLibraryDirectory enabled="false"/>
+    </libraryDirectory>
+    <publicDirectory>
+      <publicStylesheetsDirectory enabled="false"/>
+      <publicScriptsDirectory enabled="false"/>
+      <publicImagesDirectory enabled="false"/>
+      <publicIndexFile filesystemName="index.php"/>
+      <htaccessFile filesystemName=".htaccess"/>
+    </publicDirectory>
+    <projectProvidersDirectory enabled="false"/>
+    <temporaryDirectory enabled="false"/>
+    <testsDirectory>
+      <testPHPUnitConfigFile filesystemName="phpunit.xml"/>
+      <testPHPUnitBootstrapFile filesystemName="bootstrap.php"/>
+      <testApplicationDirectory>
+        <testApplicationControllerDirectory>
+          <testApplicationControllerFile forControllerName="Index">
+            <testApplicationActionMethod forActionName="index"/>
+          </testApplicationControllerFile>
+          <testApplicationControllerFile forControllerName="Guestbook">
+            <testApplicationActionMethod forActionName="index"/>
+            <testApplicationActionMethod forActionName="sign"/>
+          </testApplicationControllerFile>
+        </testApplicationControllerDirectory>
+        <testApplicationModulesDirectory>
+          <testApplicationModuleDirectory forModuleName="guestbook">
+            <testApplicationControllerDirectory>
+              <testApplicationControllerFile forControllerName="Index">
+                <testApplicationActionMethod forActionName="index"/>
+                <testApplicationActionMethod forActionName="show"/>
+                <testApplicationActionMethod forActionName="create"/>
+                <testApplicationActionMethod forActionName="update"/>
+                <testApplicationActionMethod forActionName="delete"/>
+              </testApplicationControllerFile>
+            </testApplicationControllerDirectory>
+          </testApplicationModuleDirectory>
+        </testApplicationModulesDirectory>
+      </testApplicationDirectory>
+      <testLibraryDirectory/>
+    </testsDirectory>
+  </projectDirectory>
+</projectProfile>

@@ -1,0 +1,6 @@
+/app/tmp
+/lib/Cake/Console/Templates/skel/tmp/
+/build
+/dist
+.DS_Store
+/tags

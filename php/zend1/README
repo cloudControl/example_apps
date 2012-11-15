@@ -1,0 +1,8 @@
+* to set the development environment you have to edit /htaccess:
+     SetEnv APPLICATION_ENV development
+
+* create locally a mysql database, with user and password and change appropriately
+application/configs/application.ini ([development : production] - section)
+
+* dump sqldump.sql to your database
+http://yourlocal.zendapp/guestbook should be configured
